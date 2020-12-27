@@ -51,11 +51,37 @@
   border: none;
   background-color: #df8a13;
   font-size: 1.2rem;
+  font-family: "PT Sans", sans-serif;
+}
+
+.panel-title {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.panel-title,
+.panel-info > .panel-heading {
+  color: #fff;
+  background-color: #df8a13;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
 }
 
 .panel-body {
   border: 1px solid #dddddd;
   border-radius: 0 0 4px 4px;
+  background-image: none;
+  border: 1px solid #ccc;
+  transition: border-color ease-in-out .15s;
+}
+
+.btn.btn-defalt {
+  background-color: #fff;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border: 1px solid #ccc;
+  transition: border-color ease-in-out .15s;
+
 }
 
 .input-lg,
@@ -461,6 +487,10 @@ section {
   color: #fbfbfb;
 }
 
+.footer-list-item{
+  list-style: none;
+}
+
 @media (min-width: 576px) {
   h1 {
     margin: -7.5px 0 45px;
@@ -478,6 +508,9 @@ section {
     letter-spacing: 0.33em;
     font-size: 3.5rem;
   }
+  .user-login__tabs a {
+    padding: 14px 5px 11px !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -490,6 +523,9 @@ section {
   .navbar-right li {
     margin: 5px 0 5px 5px;
   }
+  .user-login__tabs a {
+    padding: 14px 5px 11px !important;
+  }
 }
 
 @media (max-width: 767.8px) {
@@ -501,6 +537,9 @@ section {
   }
   .navbar-right {
     margin-top: 0;
+  }
+  .user-login__tabs a {
+    padding: 14px 5px 11px !important;
   }
 }
 
@@ -520,5 +559,8 @@ section {
     margin-right: -7.5px;
     letter-spacing: 0.2em;
     font-size: 2.5rem;
+  }
+  .user-login__tabs a {
+    padding: 14px 5px 11px !important;
   }
 }
