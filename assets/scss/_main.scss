@@ -1,3 +1,176 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
 }
+
+.new-films,
+.top-week {
+  &-row {
+    margin-right: -$gap / 2;
+    margin-bottom: -$gap;
+    margin-left: -$gap / 2;
+  }
+
+  &-item {
+    margin-bottom: $gap;
+    padding-right: $gap / 2;
+    padding-left: $gap / 2;
+
+    &__thumbnail {
+      margin-bottom: 0;
+
+      transition: background-color 0.25s;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      margin: 0;
+
+      font-size: 1rem;
+      font-weight: bold;
+
+      @include text-shortener;
+    }
+
+    &__caption {
+      text-align: center;
+    }
+
+    &:hover {
+      .thumbnail {
+        border-color: $color-accent;
+        background-color: $color-accent;
+      }
+
+      h3 {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+.film-news {
+  &-item {
+    .thumbnail {
+      margin-bottom: 0;
+
+      transition: background-color 0.25s;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+
+    &__button {
+      float: right;
+
+      margin-bottom: $gap * 2;
+
+      transition: background-color 0.25s;
+    }
+
+    &:hover {
+      .thumbnail {
+        background-color: lighten($color-accent, 15%);
+      }
+
+      h3 > a {
+        color: $color-accent;
+      }
+
+      .btn-warning {
+        background-color: $color-accent;
+      }
+    }
+
+    h3 > a {
+      transition: color 0.25s;
+    }
+  }
+}
+
+.film-info{
+
+  font-size: 1.2em;
+
+  &-title{
+      position: relative;
+      &::after{
+          position: absolute;
+          content: "";
+          background-color:rgba($color-accent, 0.5);
+          width: 100%;
+          height: 3px;
+          margin: 0.85em 0 0 15px;
+      }
+  }
+
+  &__well{
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  
+  }
+
+  &__container{
+      white-space: nowrap;
+
+      &:not(:last-of-type){
+          margin-right: 15px;
+      }
+  }
+
+  &__badge{
+      font-size: 0.8em;
+  }
+
+  .embed-responsive {
+      border: 1px solid #dddddd;
+      border-bottom: none;
+      border-radius: 4px 4px 0 0;
+  }
+}
+
+.film-comments{
+  .panel:last-of-type{
+      margin-bottom: 30px;
+  }
+}
+
+.film-comment-form{
+  h2{
+      @include xs-min{
+          margin: 60px 45px 45px 45px;
+      }
+      
+      
+      @include xs{
+          margin: 45px 0 30px 45px;
+          font-size: 1.75rem;
+      }
+  }
+ 
+  
+
+  &__btn{
+      float: right;
+  }
+  .input-lg {
+      font-size: 0.875rem;
+  }
+
+}
+

@@ -48,4 +48,18 @@
 
     @extend %text-shadow;
   }
+
+  &__about
+    {
+        font-size: 1.15rem;
+
+        display: block;
+
+        letter-spacing: .2em;
+
+        color: $color-light ;
+        @extend %text-shadow;
+        //text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
+
+    }
 }

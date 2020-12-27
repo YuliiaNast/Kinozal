@@ -1,0 +1,37 @@
+.film-info{
+&__well {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+&__container {
+    white-space: nowrap;
+  }
+  
+  &__container:not(:last-of-type) {
+    margin-right: 15px;
+  }
+  
+ &__badge {
+    font-size: 0.8em;
+  }
+  
+ &__.embed-responsive {
+    border: 1px solid #dddddd;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+  }
+}
+  
+  .film-comments.panel:last-of-type {
+    margin-bottom: 30px;
+ 
+  
+  &-form__btn {
+    float: right;
+  }
+  
+ &-form .input-lg {
+    font-size: 0.875rem;
+  }
+}
